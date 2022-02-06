@@ -11,3 +11,6 @@ This code is based on the tutorial that you can find on:
 
 The original source code can be found at:
 - https://github.com/callicoder/spring-security-react-ant-design-polls-app
+
+Relevant changes I've made:
+- My MySQL connection data is on an ```application-dev.properties``` and I set up ```dev``` as the active profile in my IDE.
