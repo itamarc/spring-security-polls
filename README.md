@@ -14,3 +14,7 @@ The original source code can be found at:
 
 Relevant changes I've made:
 - My MySQL connection data is on an ```application-dev.properties``` and I set up ```dev``` as the active profile in my IDE.
+- JWT key and expiration time are also in ```dev``` profile configuration.
+- Changed some deprecated classes and methods in JWT authentication to the recommended substitutions.
+- Changed some field injection to constructor injection, as recommended now by Spring.
+- I'm using Lombok to provide the logging through ```@Slf4j``` annotation.
