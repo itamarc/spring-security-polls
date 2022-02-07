@@ -18,3 +18,20 @@ Relevant changes I've made:
 - Changed some deprecated classes and methods in JWT authentication to the recommended substitutions.
 - Changed some field injection to constructor injection, as recommended now by Spring.
 - I'm using Lombok to provide the logging through ```@Slf4j``` annotation.
+
+## application-dev.properties
+
+My properties file used in development have the following keys:
+
+```properties
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url= jdbc:mysql://localhost:3306/polling_app?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+spring.datasource.username=[your mysql user]
+spring.datasource.password=[your mysql password]
+spring.jpa.hibernate.ddl-auto=create
+## App Properties
+app.jwtSecret=[your JWT secret key]
+app.jwtExpirationInMs=604800000
+# Comma separated list of allowed origins
+app.cors.allowedOrigins=http://localhost:3000
+```
